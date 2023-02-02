@@ -2273,9 +2273,6 @@ ROM_START( gauntleg )
 
 	ROM_REGION16_LE( 0x10000, "dcs", 0 ) // Vegas SIO boot ROM
 	ROM_LOAD16_BYTE( "vegassio.bin", 0x000000, 0x8000, CRC(d1470e23) SHA1(f6e8405cfa604528c0224401bc374a6df9caccef) )
-
-	ROM_REGION( 0x2000, "serial_security_pic", 0 ) // security PIC (provides game ID code and serial number)
-	ROM_LOAD( "322_gauntlet.u37", 0x0000, 0x2000, CRC(0fe0bd0a) SHA1(bfd54572e2923d26392e89961d044357f551872a) )
 ROM_END
 
 
@@ -2300,9 +2297,6 @@ ROM_START( gauntleg12 )
 
 	ROM_REGION16_LE( 0x10000, "dcs", 0 ) // Vegas SIO boot ROM
 	ROM_LOAD16_BYTE( "vegassio.bin", 0x000000, 0x8000, CRC(d1470e23) SHA1(f6e8405cfa604528c0224401bc374a6df9caccef) )
-
-	ROM_REGION( 0x2000, "serial_security_pic", 0 ) // security PIC (provides game ID code and serial number)
-	ROM_LOAD( "322_gauntlet.u37", 0x0000, 0x2000, CRC(0fe0bd0a) SHA1(bfd54572e2923d26392e89961d044357f551872a) )
 ROM_END
 
 
@@ -2318,9 +2312,6 @@ ROM_START( gauntdl )
 
 	ROM_REGION16_LE( 0x10000, "dcs", 0 ) // Vegas SIO boot ROM
 	ROM_LOAD16_BYTE( "vegassio.bin", 0x000000, 0x8000, CRC(d1470e23) SHA1(f6e8405cfa604528c0224401bc374a6df9caccef) )
-
-	ROM_REGION( 0x2000, "serial_security_pic", 0 ) // security PIC (provides game ID code and serial number)
-	ROM_LOAD( "346_gauntlet-dl.u37", 0x0000, 0x2000, CRC(09420dd3) SHA1(9ffc62049b3e329b525469849944896163b1582b) )
 ROM_END
 
 
@@ -2336,9 +2327,6 @@ ROM_START( gauntdl24 )
 
 	ROM_REGION16_LE( 0x10000, "dcs", 0 ) // Vegas SIO boot ROM
 	ROM_LOAD16_BYTE( "vegassio.bin", 0x000000, 0x8000, CRC(d1470e23) SHA1(f6e8405cfa604528c0224401bc374a6df9caccef) )
-
-	ROM_REGION( 0x2000, "serial_security_pic", 0 ) // security PIC (provides game ID code and serial number)
-	ROM_LOAD( "346_gauntlet-dl.u37", 0x0000, 0x2000, CRC(09420dd3) SHA1(9ffc62049b3e329b525469849944896163b1582b) )
 ROM_END
 
 
@@ -2525,9 +2513,6 @@ ROM_START( sf2049 )
 
 	DISK_REGION( PCI_ID_IDE":ide:0:hdd:image" ) // Guts 1.03 9/3/1999 Game 9/8/1999
 	DISK_IMAGE( "sf2049", 0, SHA1(9e0661b8566a6c78d18c59c11cd3a6628d025405) )
-
-	ROM_REGION( 0x2000, "serial_security_pic", ROMREGION_ERASEFF ) // security PIC (provides game ID code and serial number)
-	ROM_LOAD( "336_rush_2049.u18", 0x0000, 0x1000, CRC(e258c3ff) SHA1(c78f739638a0775e4075c6a460c70dafbcf08fd5) )
 ROM_END
 
 
@@ -2541,9 +2526,6 @@ ROM_START( sf2049se )
 
 	DISK_REGION( PCI_ID_IDE":ide:0:hdd:image" )
 	DISK_IMAGE( "sf2049se", 0, SHA1(7b27a8ce2a953050ce267548bb7160b41f3e8054) )
-
-	ROM_REGION( 0x2000, "serial_security_pic", ROMREGION_ERASEFF ) // security PIC (provides game ID code and serial number)
-	ROM_LOAD( "352_rush_2049_se.u18", 0x0000, 0x1007, CRC(6120c20d) SHA1(9bd76514de261aa7957f896c1ea0b3f91d4cb5d6) ) // is this original or bootleg ? PIC timestamp is 1 Jan 1980 and SN# very small number
 ROM_END
 
 
@@ -2556,9 +2538,6 @@ ROM_START( sf2049te )
 
 	DISK_REGION( PCI_ID_IDE":ide:0:hdd:image" )
 	DISK_IMAGE( "sf2049te", 0, SHA1(625aa36436587b7bec3e7db1d19793b760e2ea51) ) // GUTS 1.61 Game Apr 2, 2001 13:07:21
-
-	ROM_REGION( 0x2000, "serial_security_pic", ROMREGION_ERASEFF ) // security PIC (provides game ID code and serial number)
-	ROM_LOAD( "352_rush_2049_se.u18", 0x0000, 0x1007, CRC(6120c20d) SHA1(9bd76514de261aa7957f896c1ea0b3f91d4cb5d6) ) // SE PIC is fine for TE too
 ROM_END
 
 ROM_START( sf2049tea )
@@ -2570,9 +2549,6 @@ ROM_START( sf2049tea )
 	// All 7 courses are unlocked
 	DISK_REGION( PCI_ID_IDE":ide:0:hdd:image" )
 	DISK_IMAGE( "sf2049tea", 0, SHA1(8d6badf1159903bf44d9a9c7570d4f2417398a93) )
-
-	ROM_REGION( 0x2000, "serial_security_pic", ROMREGION_ERASEFF ) // security PIC (provides game ID code and serial number)
-	ROM_LOAD( "352_rush_2049_se.u18", 0x0000, 0x1007, CRC(6120c20d) SHA1(9bd76514de261aa7957f896c1ea0b3f91d4cb5d6) ) // SE PIC is fine for TE too
 ROM_END
 
 /*************************************
